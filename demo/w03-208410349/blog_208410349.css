@@ -37,7 +37,7 @@ body {
     letter-spacing: 2px;
 }
 
-.blog-center {
+.blogs-center {
     width: var(--fluid-width);
     max-width: var(--max-width);
     margin: 0 auto;

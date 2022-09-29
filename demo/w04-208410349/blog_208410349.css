@@ -74,7 +74,7 @@ body {
     text-transform: uppercase;
     color: var(--primary);
     letter-spacing: var(--letter-spacing);
-    font-weight: 800;
+    font-weight: 500;
 }
 
 .blog-content h3 {

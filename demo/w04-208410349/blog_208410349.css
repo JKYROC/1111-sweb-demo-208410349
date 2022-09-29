@@ -5,8 +5,12 @@
 }
 
 :root {
+    --primary: #645cff;
+    --primary-dark: #3c3799;
     --grey-light: #f1f5f9;
+    --grey: #647484;
     --grey-dark: #0f172a;
+    --letter-spacing: 2px;
     --fluid-width: 90vw;
     --max-width: 1170px;
     --border-radius: 0.15rem;
@@ -60,4 +64,32 @@ body {
 .blog-img {
     border-radius: var(--border-radius);
     margin-bottom: 0.5rem;
+}
+
+.blog-content{
+    padding-bottom: 1rem;
+}
+
+.blog-content span {
+    text-transform: uppercase;
+    color: var(--primary);
+    letter-spacing: var(--letter-spacing);
+    font-weight: 800;
+}
+
+.blog-content h3 {
+    text-transform: capitalize;
+    letter-spacing: var(--letter-spacing);
+    margin: 0.5rem 0;
+}
+
+.blog-content p {
+    color: var(--grey);
+    margin-bottom: 0.5rem;
+}
+
+.blog-content a {
+    text-transform: capitalize;
+    color: var(--primary-dark);
+    letter-spacing: 1px;
 }

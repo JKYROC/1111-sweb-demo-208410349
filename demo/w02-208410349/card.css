@@ -20,15 +20,13 @@ body{
 .card-1 .icon{
     background: #ff69a6;
 }
-
 .card-2{
-    border-color: #68a3ff;
+    border-color: #80adf0;
 }
 
 .card-2 .icon{
-    border-color: #68a3ff;
+    background: #80adf0;
 }
-
 .icon{
     width: 40px;
     height: 40px;
@@ -50,5 +48,5 @@ body{
 
 .btn-2{
     background: #ecf4ff;
-    color: #68a3ff;
+    color: #80adf0;
 }

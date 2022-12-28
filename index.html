@@ -1,40 +1,257 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Project page</title>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Start your development with Meyawo landing page.">
+    <meta name="author" content="Devcrud">
+    <title>Home page</title>
+    <!-- font icons -->
+    <link rel="stylesheet" href="assets/vendors/themify-icons/css/themify-icons.css">
+    <!-- Bootstrap + Meyawo main styles -->
+	<link rel="stylesheet" href="assets/css/meyawo.css">
+    <!-- font-awesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- scss-->
+    <link rel="stylesheet" href="./css/index.css">
 </head>
-<body>
-<!-- navbar -->
-<nav class="nav" id="nav">
-    <div class="nav-center">
-        <div class="nav-header">Jky Roc</div>
+<body data-spy="scroll" data-target=".navbar" data-offset="40" id="home">
+    <!-- Page Navbar -->
+    <nav class="custom-navbar" data-spy="affix" data-offset-top="20">
+        <div class="container">
+            <a class="logo" href="#">Jky Roc</a>         
+            <ul class="nav">
+                <li class="item">
+                    <a class="link" href="./index.html">Home</a>
+                </li>
+                <li class="item">
+                    <a class="link" href="#resume">resume</a>
+                </li>
+                <li class="item">
+                    <a class="link" href="#works">works</a>
+                </li>
+                <li class="item">
+                    <a class="link" href="./demo_208410349.html">Demo</a>
+                </li>
+                <li class="item">
+                    <a class="link" href="./learning.html">learning</a>
+                </li>
+            </ul>
+            <a href="javascript:void(0)" id="nav-toggle" class="hamburger hamburger--elastic">
+                <div class="hamburger-box">
+                  <div class="hamburger-inner"></div>
+                </div>
+            </a>
+        </div>          
+    </nav>
+    <!-- End of Page Navbar -->
+    <!-- page header -->
+    <header id="home" class="header">
+        <div class="overlay"></div>
+        <div class="header-content container">
+            <h1 class="header-title">
+                <span class="up">Hi!</span>
+                <span class="down">I am Kuo !</span>
+            </h1>
+            <ul class="social-icons">
+                <li>
+                  <a href="https://twitter.com/"></a>
+                  <i class="fa-brands fa-twitter"></i>
+                </li>
+                <li>
+                  <a href="https://facebook.com/"></a>
+                  <i class="fa-brands fa-facebook"></i>
+                </li>
+                <li>
+                  <a href="https://instagram.com/"></a>
+                  <i class="fa-brands fa-instagram"></i>
+                </li>
+                <li>
+                  <a href="https://youtube.com/"></a>
+                  <i class="fa-brands fa-youtube"></i>
+                </li>
+                <li>
+                  <a href="https://weibo.com/"></a>
+                  <i class="fa-brands fa-weibo"></i>
+                </li>
+              </ul>
+        </div>
+
+    </header>
+    <!-- end of page header -->
+        <!-- About -->
+        <section class="section about" id="resume">
+            <div class="section-center about-center">
+              <!-- about img -->
+              <article class="about-img">
+                <img
+                  src="./images/about.jpg"
+                  class="hero-photo"
+                  alt="about img"
+                />
+              </article>
+              <!-- about info -->
+              <article class="about-info">
+                <!-- section title -->
+                <div class="section-title about-title">
+                  <h2>Resume</h2>
+                  <div class="underline"></div>
+                </div>
+                <!--end of section title -->
+                <!-- resume -->
+                <p>
+                    <h5>
+                        工程師  •  塔圖科技股份有限公司
+                    </h5>
+                    <h6>
+                        五月 2022 - 現在
+                    </h6>                     
+                        主要工作內容<br>
+                        搜集使用者數據及電商商品資料，協助廣告優化師優化廣告及解決客戶回報問題
+                        經手50多家客戶，熟悉使用網頁工具，熟練運用不同專案工具達成目標
+                        設計協助專案運行的套件，解決公司總客戶數5 ％面臨到的問題
+                        熟悉Google Ads、Google Analytics、Meta 等廣告渠道<br>
+                    <h5>
+                        門市儲備幹部  •  摩斯漢堡 安心食品服務股份有限公司<br>
+                    </h5>
+                    <h6>
+                    九月 2021 - 十二月 2021
+                    </h6>
+                        主要工作內容<br>
+                        擔任內場作業人員，製作商品；擔任外場服務員，面對客戶需求<br>
+                        擔任值班主管，帶領內外場共五人，解決客戶提出的所有需求<br>
+                        擔任值班主管期間，幫店舖避免兩起客訴，達到店舖與客人雙贏局面<br>
+                        </p>
+                <a href="#resume" class="btn">hire me</a>
+              </article>
+            </div>
+          </section>
+          <!-- end of resume -->
+    <!-- works -->
+    <section class="projects" id="works">
+        <div class="section-title">
+          <h2>Latest Work</h2>
+          <div class="underline"></div>
+          <div class="projects-text">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis excepturi porro ipsum, quo temporibus nobis rerum est libero perferendis! Sequi aliquam nesciunt fugit delectus quas quae velit, veniam corrupti dolores officia quia nisi harum deleniti reprehenderit? Voluptas et error esse.</p>
+          </div>
+        </div>     
+        <div class="section-center projects-center">
+
+          <a href="./demo/w02-208410349/card.html" class="project-1">
+            <article class="project">
+              <img src="./images/card.png" class="project-img"alt="">
+              <div class="project-info">
+                <h4>project title</h4>
+                <p>first card</p>
+              </div>
+            </article>
+          </a>
+          <a href="./demo/w01-208410349/index.html" class="project-2">
+            <article class="project">
+              <img src="./images/w1.png" class="project-img"alt="">
+              <div class="project-info">
+                <h4>project title</h4>
+                <p>first coding</p>
+              </div>
+            </article>
+          </a>
+          <a href="./demo/w04-208410349/blog_208410349.html" class="project-3">
+            <article class="project">
+              <img src="./images/blog.png" class="project-img"alt="">
+              <div class="project-info">
+                <h4>project title</h4>
+                <p>blog</p>
+              </div>
+            </article>
+          </a>
+          <a href="./demo/w06-208410349/blog_208410349.html" class="project-4">
+            <article class="project">
+              <img src="./images/css grid using minmax.png" class="project-img"alt="">
+              <div class="project-info">
+                <h4>project title</h4>
+                <p>css grid using minmax</p>
+              </div>
+            </article>
+          </a>
+          <a href="./demo/w05-208410349/blog_208410349.html" class="project-5">
+            <article class="project">
+              <img src="./images/lastest-blog.png" class="project-img"alt="">
+              <div class="project-info">
+                <h4>project title</h4>
+                <p>latest-blog</p>
+              </div>
+            </article>
+          </a> 
+          <a href="./demo/w09-208410349/resume_xx.html" class="project-6">
+            <article class="project">
+              <img src="./images/resume.png" class="project-img"alt="">
+              <div class="project-info">
+                <h4>project title</h4>
+                <p>resume</p>
+              </div>
+            </article>
+          </a>
+          <a href="./demo/w14-208410349/portfolio/index.html" class="project-7">
+            <article class="project">
+              <img src="./images/project.png" class="project-img"alt="">
+              <div class="project-info">
+                <h4>project title</h4>
+                <p>project</p>
+              </div>
+            </article>
+          </a>
+          <a href="./demo/w14-208410349/portfolio/index.html" class="project-8">
+            <article class="project">
+              <img src="./images/project2.png" class="project-img"alt="">
+              <div class="project-info">
+                <h4>project title</h4>
+                <p>project2</p>
+              </div>
+            </article>
+          </a> 
+          <a href="./demo/w11-208410349-midterm/p2_xx/p2_xx.html" class="project-9">
+            <article class="project">
+              <img src="./images/midterm.png" class="project-img"alt="">
+              <div class="project-info">
+                <h4>project title</h4>
+                <p>midterm</p>
+              </div>
+            </article>
+          </a>    
+        </div>
+      </section>
+    <!-- end of works-->
+    <div class="learning">
+        <a href="./learning.html" class="btn">about learning</a>
     </div>
-    <ul class="nav-links">
-        <li>
-            <a href="./demo_208410349.html">Demo</a>
-        </li>
-        <li>
-            <a href="">Hero</a>
-        </li>
-        <li>
-            <a href="">Resume</a>
-        </li>
-        <li>
-            <a href="#works">Works</a>
-        </li>
-        <li>
-            <a href="./learning.html">Learning</a>
-        </li>
-    </ul>
-</nav>
-<!-- end of navbar -->
-<!-- header -->
-<div class="header">
-    <div class="header">aa</div>
-</div>
-<!-- end of header-->
+    <!--learning-->
+
+    <!-- end of learning-->
+    <!-- footer -->
+    <div class="container">
+        <footer class="footer">       
+            <p class="mb-0">Copyright <script>document.write(new Date().getFullYear())</script> &copy; <a href="http://www.devcrud.com">DevCRUD</a></p>
+            <div class="social-links text-right m-auto ml-sm-auto">
+                <a href="javascript:void(0)" class="link"><i class="ti-facebook"></i></a>
+                <a href="javascript:void(0)" class="link"><i class="ti-twitter-alt"></i></a>
+                <a href="javascript:void(0)" class="link"><i class="ti-google"></i></a>
+                <a href="javascript:void(0)" class="link"><i class="ti-pinterest-alt"></i></a>
+                <a href="javascript:void(0)" class="link"><i class="ti-instagram"></i></a>
+                <a href="javascript:void(0)" class="link"><i class="ti-rss"></i></a>
+            </div>
+        </footer>
+    </div> <!-- end of page footer -->
+	
+	<!-- core  -->
+    <script src="assets/vendors/jquery/jquery-3.4.1.js"></script>
+    <script src="assets/vendors/bootstrap/bootstrap.bundle.js"></script>
+
+    <!-- bootstrap 3 affix -->
+	<script src="assets/vendors/bootstrap/bootstrap.affix.js"></script>
+
+    <!-- Meyawo js -->
+    <script src="assets/js/meyawo.js"></script>
+
 </body>
 </html>

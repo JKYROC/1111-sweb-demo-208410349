@@ -47,7 +47,8 @@ Variables
   --dark-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
   --max-width: 1170px;
 
-
+  --purple-clr-1:hsl(261, 80%, 76%);
+  --purple-clr-2:hsl(261, 88%, 62%);
 }
 /*
 =============== 
@@ -170,7 +171,7 @@ p {
 .underline{
   width: 5rem;
   height: 0.25rem;
-  background-color: var(--clr-primary-5);
+  background-color:  var( --purple-clr-1);
   margin-bottom: 1.2rem;
   margin: 0 auto;
 }

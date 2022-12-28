@@ -1,2 +1,202 @@
 @use 'global_xx';
 
+.social-icons{
+    display: flex;
+    gap: 1.5rem;
+    margin-top: 3rem;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+  }
+  
+  .social-icon{
+    font-size: 2.5rem;
+    color: var(--clr-grey-5);
+    transition: var(--transition);
+  
+    &:hover{
+      color: var(--clr-primary-5);
+    }
+  }
+  .about {
+    &-center {
+      display: grid;
+      place-items: center;
+      gap: 2rem;
+    }
+    &-info {
+      padding: 3rem;
+    }
+    &-title {
+      text-align: left;
+      margin-bottom: 2rem;
+      margin-top: 2rem;
+    }
+    &-title .underline {
+      margin-left: 0;
+    }
+    &-img {
+      display: block;
+      width: 70%;
+      position: relative;
+    }
+    &-img::before {
+      content: '';
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      border: 1.25rem solid var(--clr-purple-1);
+      top: 2rem;
+      left: -2rem;
+      border-radius: var(--radius);
+    }
+    &-photo {
+      max-width: 25rem;
+      max-height: 30rem;
+      object-fit: cover;
+      border-radius: var(--radius);
+      position: relative;
+    }
+}
+@media screen and (min-width: 768px) {
+    .about {
+      &-center {
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+}
+.projects{
+    &-text{
+        width: 80vw;
+        margin: 0 auto;
+    }
+    .underline{
+        margin-bottom: 1.5rem;
+    }
+    .project{
+        position: relative;
+        margin-bottom: 2rem;
+        background-color: rgba(159, 86, 255, 0.689);
+
+        &::after{
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 0;
+            height: 100%;
+            width: 100%;
+            border: 0.25rem solid var(--clr-white);
+            transition: var(--transition);
+            opacity: 0;
+        }
+
+        &:hover::after {
+            opacity: 1;
+            transform: scale(0.8);
+        }
+        &:hover .project-img{
+            opacity: 0.2;
+        }
+        &:hover .project-info{
+            opacity: 1;
+        }
+
+        &-img{
+            height: 15rem;
+            object-fit: cover;
+            border-radius: var(--radius);
+            transition: var(--transition);
+        }
+
+        &-info{
+            position: absolute;
+            text-align: center;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50% , -50%);
+            color: black;
+            opacity: 0;
+        }
+        p {
+            color: black;
+            font-weight: 10px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    }
+}
+@media screen and (min-width:768px) {
+    .projects{
+
+        &-center{
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            column-gap: 2rem;
+        }
+    }
+}
+@media  screen and (min-width:992px) {
+    .projects{
+        &-center{
+            grid-template-columns: 1fr 1fr 1fr;
+        }
+    }
+    
+}
+@media screen and (min-width:1170px) {
+    .projects{
+        &-center{
+            grid-template-rows: 15rem 15rem;
+            gap: 2rem;
+            grid-template-areas:
+            "a b b"
+            "a c d"
+            "e e e"
+            "f g g"
+            "f g g"
+            "h h i";
+        }
+        .project{
+            height: 100%;
+            &-img{
+                height: 100%;
+            }
+            &-1{
+                grid-area: a;
+            }
+            &-2{
+                grid-area: b;
+            }
+            &-3{
+                grid-area: c;
+            }
+            &-4{
+                grid-area: d;
+            }
+            &-5{
+                grid-area: e;
+            }
+            &-6{
+                grid-area: f;
+            }
+            &-7{
+                grid-area: g;
+            }
+            &-8{
+                grid-area: h;
+            }
+            &-9{
+                grid-area: i;
+            }
+        }
+    }
+}
+.learning{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .btn{
+        background-color: rgba(159, 86, 255, 0.689);
+        font-size: large;
+        margin-bottom: 15px;
+    }
+}
